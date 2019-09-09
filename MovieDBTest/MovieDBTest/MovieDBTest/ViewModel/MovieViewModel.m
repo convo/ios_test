@@ -17,6 +17,7 @@
 
 - (instancetype)init {
     self = [super init];
+    self.movieList = [[NSMutableArray alloc] initWithCapacity:0];
     return self;
 }
 
@@ -28,6 +29,10 @@
 }
 
 - (void)movieList:(NSDictionary *)responseDictionary {
-    MovieDescriptionModel *movie = [[MovieDescriptionModel alloc] initWithDictionary:responseDictionary];
+    for (int i = 0; i<[[responseDictionary objectForKey:@"results"] count]; i++) {
+        MovieDescriptionModel *movie = [[MovieDescriptionModel alloc] initWithDictionary:[responseDictionary objectForKey:@"results"][i]];
+        [self.movieList addObject:movie];
+    }
+    [_movieViewdelegate updateView:self.movieList];
 }
 @end

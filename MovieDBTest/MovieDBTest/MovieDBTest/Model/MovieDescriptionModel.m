@@ -13,9 +13,9 @@
 - (id)initWithDictionary:(NSDictionary *)responseDictionary {
     self = [super init];
     if (self) {
-        self.movieTitle = @"";
-        self.movieDescription = @"";
-        self.posterImageUrl = @"";
+        self.movieTitle = [responseDictionary objectForKey:@"title"];
+        self.movieDescription = [responseDictionary objectForKey:@"overview"];
+        self.posterImageUrl = [responseDictionary objectForKey:@"poster_path"];
     }
     return self;
 }

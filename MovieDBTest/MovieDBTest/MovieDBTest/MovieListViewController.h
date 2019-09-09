@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface MovieListViewController : UIViewController
+#import "ViewModel/MovieViewModel.h"
+@interface MovieListViewController : UIViewController<MovieViewDelegate,UITableViewDelegate,UITableViewDataSource>
 
 
 @end

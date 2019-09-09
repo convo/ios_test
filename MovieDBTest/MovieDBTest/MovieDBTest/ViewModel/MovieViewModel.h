@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MovieViewModel : NSObject
 @property (strong,nonatomic)NSMutableArray *movieList;
 @property (weak,nonatomic)id<MovieViewDelegate> movieViewdelegate;
+- (void)getMovieList;
 @end
 
 NS_ASSUME_NONNULL_END

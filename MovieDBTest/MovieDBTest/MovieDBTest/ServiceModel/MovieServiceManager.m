@@ -15,7 +15,6 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _sharedMovieServiceManager = [[self alloc] init];
-        /*[[self alloc] initWithBaseURL:[NSURL URLWithString:@"http://api.themoviedb.org/3/discover/movie?with_cast=3896&sort_by=popularity.desc&api_key=33e0ed5431a0b6fd7d517ac61f476054"]];*/
     });
     return _sharedMovieServiceManager;
 }

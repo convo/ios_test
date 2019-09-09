@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		192840AF497F63161A4008AD /* Pods_MovieDBTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682D735C701A86585474009E /* Pods_MovieDBTest.framework */; };
+		1B1767ED2326CAC30002181D /* MovieTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1767EC2326CAC30002181D /* MovieTitleCell.m */; };
 		1B8BE19A23268303003AFD1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BE19923268303003AFD1C /* AppDelegate.m */; };
 		1B8BE19D23268303003AFD1C /* MovieListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BE19C23268303003AFD1C /* MovieListViewController.m */; };
 		1B8BE1A023268303003AFD1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8BE19E23268303003AFD1C /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B1767EB2326CAC30002181D /* MovieTitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieTitleCell.h; sourceTree = "<group>"; };
+		1B1767EC2326CAC30002181D /* MovieTitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieTitleCell.m; sourceTree = "<group>"; };
 		1B8BE19523268303003AFD1C /* MovieDBTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieDBTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B8BE19823268303003AFD1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1B8BE19923268303003AFD1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 			children = (
 				1B8BE1CE2326A378003AFD1C /* MovieViewModel.h */,
 				1B8BE1CF2326A378003AFD1C /* MovieViewModel.m */,
+				1B1767EB2326CAC30002181D /* MovieTitleCell.h */,
+				1B1767EC2326CAC30002181D /* MovieTitleCell.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -375,6 +380,7 @@
 				1B8BE1A823268311003AFD1C /* main.m in Sources */,
 				1B8BE19A23268303003AFD1C /* AppDelegate.m in Sources */,
 				1B8BE1D62326A41C003AFD1C /* MovieDescriptionModel.m in Sources */,
+				1B1767ED2326CAC30002181D /* MovieTitleCell.m in Sources */,
 				1B8BE1D32326A3E4003AFD1C /* MovieServiceManager.m in Sources */,
 				1B8BE1D02326A378003AFD1C /* MovieViewModel.m in Sources */,
 			);
